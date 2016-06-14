@@ -1,0 +1,140 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl , p, form, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+
+    font-size: 13px;
+    
+    /*背景图片*/
+    background: url("../images/bg.jpg");
+}
+
+a {
+    color: black;
+}
+/*头部*/
+#header {
+    background-color: rgba(0,0,0,0.2);
+    text-align: right;
+    margin: 0 0 30px 0;
+    height: 38px;
+
+    /*垂直居中*/
+    line-height: 38px;
+
+
+}
+
+#header a{
+
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+
+}
+#header a.more-product{
+    background-color: royalblue;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/*主要内容*/
+#content {
+    /*background-color: green;*/
+
+
+}
+/*logo*/
+#content .logo{
+
+    text-align: center;
+}
+#content .logo img{
+
+    width: 270px;
+    height: 130px;
+}
+/*输入框*/
+#content .search{
+    width:600px;
+    height: 33px;
+    /*居中*/
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+#content .search input{
+   width: 500px;
+    height: 33px;
+    padding: 5px;
+    /*box-sizing*/
+
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+
+}
+
+#content .search input:focus{
+    outline: none;
+    border: 1px solid dodgerblue;
+}
+/*搜索按钮*/
+#content .search a{
+    background-color: royalblue;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: normal;
+
+    float: right;
+}
+/*快捷搜索*/
+#content .dom{
+
+    text-align: center;
+}
+
+#content .dom img{
+    width: 150px;
+    margin: 5px;
+
+}
+#content .dom img:hover{
+
+    /*不透明度*/
+    opacity: 0.8;
+}
+
+
+/*尾部*/
+#footer {
+    /*background-color: yellow;*/
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#footer p{
+
+    margin-top: 10px;
+}
+#footer p a{
+
+    color: blue;
+}
+#footer p .footer-top a{
+    margin:0 5px;
+
+}

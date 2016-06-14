@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+
+    list-style: none;
+}
+/*设置a标签*/
+a{
+    color: black;
+    text-decoration: none;
+}
+#tab{
+    width: 498px;
+    height: 130px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 2px #dddddd;
+    margin: 100px 0 0 100px;
+    /*处理超出的内容,包括第一个选择后多出的边框*/
+    overflow: hidden;
+}
+/*选项卡头部*/
+#tab-header{
+
+    background-color: #F7F7F7;
+    height: 33px;
+    text-align: center;
+    position: relative;
+}
+
+#tab-header ul{
+    /*width: 500px;*/
+    /*左边框清除多余的线,左移动一个px并且隐藏*/
+    width: 501px;
+    position: absolute;
+    left: -1px;
+}
+
+#tab-header ul li{
+    /*background-color: red;*/
+    float: left;
+    width: 98px;
+    height: 33px;
+    line-height: 33px;
+
+    padding: 0 1px;
+    /*下划线*/
+    border-bottom: 1px solid #dddddd;
+
+}
+
+/*设置第一个选中状态*/
+#tab-header ul li.selected{
+    background-color: white;
+    font-weight: bolder;
+    /*选中状态时没有下划线*/
+    border-bottom: 0 ;
+    /*选中时左右边框*/
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    padding: 0 ;
+
+}
+/*光标悬移装填*/
+#tab-header ul li:hover{
+    color: orangered;
+}
+
+/*主要内容 */
+#tab-content .dom{
+    /*通过与行内标签的结合使用将不需要显示的内容隐藏*/
+    display: none;
+
+}
+#tab-content .dom ul li{
+    float: left;
+    /*左浮自动变为行内块级标签*/
+    /*background-color: red;*/
+    margin: 13px 10px;
+    width: 229px;
+
+}
+
+/*内容光标悬移*/
+#tab-content .dom ul li a:hover{
+  color: orange;
+
+}

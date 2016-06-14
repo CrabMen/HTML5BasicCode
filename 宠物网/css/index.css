@@ -1,0 +1,177 @@
+/*导入字体*/
+@font-face {
+    /*输入文件路径名时不提示*/
+    font-family:Newfont;
+    src: url('../fonts/Newfont.ttf');
+}
+
+
+a,address,b,big,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{
+
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url("../images/pattern.gif");
+    font-family: Newfont;
+    
+}
+a{
+    text-decoration: none;
+
+}
+/*头部*/
+#header {
+    height: 3px;
+    background-color: red;
+}
+
+/*导航*/
+#nav{
+    /*background-color: white;*/
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+#nav ul{
+    display: inline-block;
+
+}
+#nav ul li{
+    display: inline-block;
+}
+
+#nav ul a{
+    margin: 0 10px;
+    display: inline-block;
+    height: 40px;
+    width: 200px;;
+    color: white;
+    /*background-color: red;*/
+    font-size: 30px;
+}
+
+/*设置选中以及光标悬浮时的颜色*/
+#nav ul a.selected,#nav ul a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+
+/*-------------中间列表----------------*/
+#list{
+
+    text-align: center;
+    background-color: white;
+}
+
+#list .pet{
+    display: inline-block;
+    width: 382px;
+    text-align: left;
+
+    /*设置边距*/
+    padding:15px;
+
+}
+
+#list .pet p{
+
+    font-family: 'sans-serif';
+    /*首行缩进*/
+    text-indent: 20px;
+    margin: 5px 0;
+}
+
+#list .pet a{
+    background-color: darkred;
+    color: white;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+
+
+}
+#list .pet a:hover{
+    background-color: black;
+}
+
+
+/*------------尾部-------------*/
+#footer{
+
+    margin: 20px 0;
+    text-align: center;
+
+}
+
+#footer h2{
+
+    color: white;
+    margin: 5px 0;
+}
+#footer ul{
+    display: inline-block;
+}
+
+#footer ul li{
+    display: inline-block;
+}
+#footer ul li a{
+
+    margin: 0 2px;
+}
+#footer ul li a:hover{
+    opacity: 0.8;
+}
+
+/*----------屏幕适配----------*/
+/*导航栏不在一行显示,js可以通过for循环来做*/
+@media screen and (max-width:1150px ){
+
+    #nav ul a{
+
+        width: 200px;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:890px ){
+
+    #nav ul a{
+
+        width: 120px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:750px ){
+
+    #nav ul a{
+
+        width: 80px;
+        font-size: 20px;
+        height: 30px;;
+
+    }
+    #nav{
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:750px ){
+
+    #list .pet{
+
+        width: 360px;
+       padding: 15px;
+
+    }
+    #list .pet img{
+        width: 355px;
+
+    }
+}
